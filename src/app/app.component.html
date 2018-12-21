@@ -20,7 +20,7 @@
 <!-- <div [hidden]="courses.length == 0">List of courses</div>
 <div [hidden]="courses.length != 0">No courses yet</div> -->
 
-<ul class="nav nav-pills">
+<!-- <ul class="nav nav-pills">
   <li [class.active]="viewMode == 'map'">
     <a (click)="(viewMode == 'map')">Map View</a>
   </li>
@@ -32,4 +32,12 @@
   <div *ngSwitchCase="'map'">Map View Content</div>
   <div *ngSwitchCase="'list'">List View Content</div>
   <div *ngSwitchDefault>Otherwise</div>
-</div>
+</div> -->
+
+<button (click)="onAdd()">Add</button>
+<ul>
+  <li *ngFor="let course of courses; index as i; even as e">
+    {{ i + 1 }} - {{ course.name }}
+    <button (click)="onChange(course)">Remove</button>
+  </li>
+</ul>
