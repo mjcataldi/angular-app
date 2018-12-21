@@ -13,6 +13,7 @@ import {
   encapsulation: ViewEncapsulation.Emulated
   // Default is Emulated, and for this is good because some browsers are not
   // yet set up for this.
+  // Try not to use
 })
 export class FavoriteComponent {
   // Use aliases in Input and Output to keep the contracts stable
