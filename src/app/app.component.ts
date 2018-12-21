@@ -7,12 +7,5 @@ import { FavoriteChangedEventargs } from "./favorite/favorite.component";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  post = {
-    title: "Title",
-    isFavorite: true
-  };
-
-  onFavoriteChanged(args: FavoriteChangedEventargs) {
-    console.log(`Favorite Changed:`, args);
-  }
+  courses = [1, 2, 3];
 }
