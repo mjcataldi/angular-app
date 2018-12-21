@@ -1,2 +1,7 @@
 <h1>Angular</h1>
-<courses></courses>
+<button (click)="onClick()">Here is a button</button>
+
+<favorite
+  [isFavorite]="post.isFavorite"
+  (change)="onFavoriteChange()"
+></favorite>

@@ -1,20 +1,13 @@
 import { Component } from "@angular/core";
-import { CoursesService } from "./courses.service";
 
 @Component({
   selector: "courses",
   template: `
-    <h2>{{ title }}</h2>
-    <ul>
-      <li *ngFor="let course of courses">{{ course }}</li>
-    </ul>
+    {{ text | summary: 10 }}
   `
 })
 export class CoursesComponent {
-  title = "List of courses";
-  courses = new CoursesService().getCourses();
-
-  getTitle() {
-    return this.title;
-  }
+  text = `
+    Lorem Ipsum is simply dummy text of the printing crap.
+  `;
 }
