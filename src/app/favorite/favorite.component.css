@@ -1,0 +1,6 @@
+/* @import "~bootstrap/dist/css/bootstrap.css"; */
+/* Should not do this, performance problems down the road */
+
+.glyphicon {
+  color: red;
+}

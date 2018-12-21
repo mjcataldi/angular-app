@@ -1,7 +1,6 @@
 <h1>Angular</h1>
-<button (click)="onClick()">Here is a button</button>
 
 <favorite
   [isFavorite]="post.isFavorite"
-  (change)="onFavoriteChange()"
+  (change)="onFavoriteChanged($event)"
 ></favorite>
